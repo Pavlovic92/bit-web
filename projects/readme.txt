@@ -1,0 +1,1 @@
+In this folder, you can find all the projects I did while I was a student of BIT.
