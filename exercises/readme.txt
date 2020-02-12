@@ -1,1 +1,0 @@
-In this folder, you can find all the exercises I did while I was a student of BIT.
