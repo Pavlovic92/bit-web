@@ -1,24 +1,28 @@
 * {
     box-sizing: border-box;
 }
-ul {
+
+section {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 .header-ul li {
     float: left;
     margin-right: 10px;
-    padding: 10px;    
+    padding: 10px;
 }
 
 .header-ul {
     float: right;
 }
+
 .header-ul a {
     text-decoration: none;
     color: white;
 }
+
 li a {
     display: block;
 }
@@ -27,22 +31,25 @@ li a {
     display: table;
     content: "";
 }
+
 .cf::after {
     clear: both;
 }
+
 #header {
     background-color: rgb(150, 19, 19);
     color: white;
     width: 960px;
     margin: auto;
-   
 }
+
 #imgone {
     display: block;
     width: inherit;
     border-top: 1px solid white;
     margin-bottom: 10px;
 }
+
 #container {
     width: 960px;
     margin: auto;
@@ -61,6 +68,7 @@ li a {
 #second-list .list-item:nth-child(3n) {
     margin-right: 0;
 }
+
 .links a {
     text-decoration: none;
     color: black;
@@ -69,12 +77,14 @@ li a {
     display: block;
     padding: 5px;
 }
+
 .links {
     background-color: rgb(236, 177, 26);
     width: 30%;
     height: 230px;
-    padding: 15px 5px;   
+    padding: 15px 5px;
 }
+
 #footer {
     width: 960px;
     height: 40px;
@@ -82,6 +92,7 @@ li a {
     color: white;
     margin: auto;
 }
+
 #footer p {
     padding: 10px 0px 5px 10px;
 }
