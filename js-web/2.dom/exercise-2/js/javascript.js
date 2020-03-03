@@ -1,3 +1,4 @@
+
 function createImg(Path) {
     for (var i = 0; i < Path.length; i++) {
         var mainDiv = document.querySelector('div');
@@ -25,3 +26,4 @@ function createSlider() {
 }
 
 setInterval(createSlider, 2000);
+
