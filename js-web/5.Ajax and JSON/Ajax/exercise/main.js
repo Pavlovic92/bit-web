@@ -29,23 +29,22 @@
 //     image.attr("src", imgArray[i]);
 // }
 
+document.getElementById("myBtn").addEventListener("click", createInput);
 
+function createInput() {
 
+    var getInput = $('input').value;
 
-var getInput = $('input').value;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", "http://www.geoplugin.net/xml.gp?ip=" + getInput);
+    xmlhttp.send();
 
-var xmlhttp = new XMLHttpRequest();
-xmlhttp.open("GET", "http://www.geoplugin.net/xml.gp?ip=" + getInput);
-xmlhttp.send();
+    xmlhttp.onload = function () {
 
-xmlhttp.onload = function () {
-    console.log(xmlhttp);
+        var getCountry = xmlhttp.responseXML.querySelector("geoplugin_countryName").textContent;
+        $("body").append("<h1></h1>");
+        $("h1").append(getCountry);
+    }
 
-    var getCountry = xmlhttp.responseXML.querySelector("geoplugin_countryName").textContent;
-    $("body").append("<h1></h1>");
-    $("h1").append(getCountry);
 }
 
-var btn = document.$("button")
-
-btn.addEventListener("click", asda);
