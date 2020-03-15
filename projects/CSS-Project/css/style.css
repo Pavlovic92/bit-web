@@ -5,7 +5,7 @@
 }
 
 #container {
-    width: 1200px;
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -32,8 +32,9 @@
     src: url(../fonts/Roboto-Light.ttf);
 }
 
-/*********** HEADER AND SLIDER ***********/
 
+/********************* BODY *********************/
+/*********** Header and slider ***********/
 header img {
     width: 100%;
     background-size: contain;
@@ -49,8 +50,8 @@ header h2 {
     color: #fff;
     font-family: Roboto;
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 1%;
+    left: 1%;
 }
 
 header span {
@@ -64,8 +65,8 @@ header span {
 header ul {
     display: flex;
     position: absolute;
-    top: 5px;
-    right: 5px;
+    top: 1%;
+    right: 1%;
 }
 
 header ul li {
@@ -90,7 +91,7 @@ header h1 {
     top: 40%;
     left: 5%;
     right: 5%;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -99,29 +100,28 @@ header h1 {
     bottom: 33%;
     left: 45%;
     background-color: #1C70B1;
-    padding: 10px 28px;
-    border-radius: 20px;
+    padding: 15px 35px;
+    border-radius: 25px;
     border: none;
     color: #fff;
-    font-family: RobotoLight;
-    font-size: 14px;
+    font-family: RobotoMedium;
+    font-size: 18px;
     letter-spacing: 1px;
 }
 
 /****************** MAIN *****************/
-
 /* First Section - H2 and Square*/
 
 #section-h2 {
     font-family: RobotoLight;
     border-bottom: 2px solid black;
-    padding-bottom: 10px;
-    margin: 10% 40% 3% 40%;
+    padding-bottom: 7px;
+    margin: 5% 37% 3% 37%;
     text-align: center;
     position: relative;
 }
 
-#square {
+#first-section-square {
     width: 18px;
     height: 18px;
     background-color: #fff;
@@ -133,10 +133,12 @@ header h1 {
     left: 47%;
 }
 
-/************ First section **************/
 
+/************ First section **************/
 #first-section {
     display: flex;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #first-section h3 {
@@ -189,13 +191,14 @@ header h1 {
     padding-top: 10px;
 }
 
+
 /*********************************/
-
 /*********** Second Section ***********/
-
 #second-section {
     display: flex;
     justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #second-section article {
@@ -232,6 +235,19 @@ header h1 {
     color: #fff;
 }
 
+#second-section-square {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border: 2px solid;
+    transform: rotateZ(45deg);
+    z-index: 1;
+    position: absolute;
+    top: 86%;
+    left: 47%;
+}
+
+
 /*********************************/
 /*********** Third Section ***********/
 #third-section {
@@ -253,16 +269,27 @@ header h1 {
     padding: 60px 20px 0px 20px;
 }
 
+#third-section-square {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    border: 2px solid;
+    transform: rotateZ(45deg);
+    z-index: 1;
+    position: absolute;
+    top: 86%;
+    left: 47%;
+}
+
+
 /* First article */
 .third-section_first-article {
     background-color: #3BDD9A;
-    height: auto;
 }
 
 /* Second article */
 .third-section_second-article {
     background-color: #FD5282;
-    height: auto;
 }
 
 .third-section_second-article i {
@@ -272,20 +299,263 @@ header h1 {
 /* Third article */
 .third-section_third-article {
     background-color: #376DE4;
-    height: auto;
 }
 
 /* Forth article */
 .third-section_forth-article {
     background-color: #82C3F5;
     height: auto;
-    padding-left: 40px;
+    text-align: center;
 }
 
-/* Map */
-#third-section iframe {
-    position: absolute;
-    top: 80%;
-    z-index: -1;
-    padding-top: 52px;
+
+/*********************************/
+/*********** Forth Section ***********/
+form {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.input-style {
+    width: 30%;
+    padding: 15px 0px 15px 15px;
+    font-family: RobotoMedium;
+}
+
+#email {
+    margin: 0 1.7%;
+}
+
+#message {
+    width: 94%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    padding: 15px 0px 150px 15px;
+    font-family: RobotoMedium;
+}
+
+#submit-btn {
+    background-color: #FD9727;
+    color: #fff;
+    font-family: RobotoMedium;
+    padding: 15px 20px;
+    border: none;
+    margin-left: 3%;
+}
+
+
+/*********** Footer ***********/
+footer {
+    height: 150px;
+    padding-top: 45px;
+    margin-top: 50px;
+    background-color: rgb(37, 37, 37);
+    text-align: center;
+}
+
+footer ul {
+    margin: 0;
+}
+
+.footer-li {
+    display: inline-block;
+    color: #fff;
+    font-family: RobotoMedium;
+    font-size: 14px;
+    margin: 0px 10px;
+}
+
+footer p {
+    margin-top: 30px;
+    color: #fff;
+    font-family: RobotoMedium;
+    font-size: 14px;
+}
+
+
+/**********************************/
+/**************** MEDIA QUERY *****************/
+/**************** Above 768px *****************/
+/*********** Header and slider ***********/
+@media only screen and (max-width: 1600px) {
+    header h1 {
+        font-size: 45px;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    header h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    header h1 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    header h1 {
+        font-size: 33px;
+    }
+
+    #slider-button {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header h1 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    #slider-button {
+        font-size: 14px;
+    }
+}
+
+
+/****************** MAIN *****************/
+/************ First section **************/
+@media only screen and (max-width: 1300px) {
+    #first-article {
+        margin-left: 0;
+    }
+
+    #third-article {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #first-article {
+        margin: 0;
+    }
+
+    #third-article {
+        margin: 0;
+    }
+
+    #first-section h3 {
+        font-size: 16px;
+    }
+
+    #first-section p {
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    #first-section ul {
+        line-height: 18px;
+    }
+}
+
+
+@media only screen and (max-width: 850px) {
+    #first-section h3 {
+        font-size: 14px;
+    }
+
+    #first-section p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    #first-section ul {
+        line-height: 14px;
+    }
+}
+
+
+/*********************************/
+/*********** Second Section ***********/
+@media only screen and (max-width: 1100px) {
+    #second-section article {
+        width: 32%;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    #second-section {
+        width: 95%;
+    }
+
+    #second-section-square {
+        top: 87%;
+    }
+
+
+}
+
+@media only screen and (max-width: 800px) {
+    #second-section {
+        width: 100%;
+    }
+}
+
+
+/*********************************/
+/*********** Third Section ***********/
+@media only screen and (max-width: 865px) {
+    #third-section-square {
+        top: 90%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #third-section-img {
+        width: 90%;
+    }
+
+    .third-section_text-style {
+        padding-top: 50px;
+    }
+
+    #third-section h3 {
+
+        font-size: 16px;
+    }
+
+    #third-section p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #third-section-img {
+        width: 90%;
+    }
+
+    .third-section_text-style {
+        padding-top: 40px;
+    }
+
+    #third-section h3 {
+
+        font-size: 15px;
+    }
+
+    #third-section p {
+        font-size: 13px;
+    }
+}
+
+/**************** For Tables 768px *****************/
+@media only screen and (max-width: 768px) {
+    header h1{
+        font-size: 24px;
+    }
+    #slider-button {
+        bottom: 25%;
+        left: 41%;
+    }
 }
