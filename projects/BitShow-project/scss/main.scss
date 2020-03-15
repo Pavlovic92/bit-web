@@ -1,43 +1,24 @@
+/********** Import ***********/
+@import 'home.scss';
+@import 'info.scss';
+@import 'navbar.scss';
+@import 'footer.scss';
+
+/********** General Settings *************/
 * {
-  box-sizing: border-box;
-}
-/*********NAV BAR**************/
-
-.navbar {
-  justify-content: space-around;
-  background-color: #3e454d;
-}
-.navbar-brand {
-  color: white;
+    box-sizing: border-box;
 }
 
-.h1-div {
-  text-align: center;
-  margin: 20px 0px;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
 }
 
-/***** SHOW IMAGES *****/
-img {
-  width: 100%;
+.container {
+    border: 1px solid #343A40;
+    padding: 0;
 }
 
-.main {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.wrapper-div {
-  width: 30%;
-  text-align: left;
-  margin-bottom: 30px;
-}
 
-a {
-  border: 1px solid #00000030;
-  padding: 10px;
-  color: #4587ff;
-  font-weight: bold;
-  display: block;
-}
+

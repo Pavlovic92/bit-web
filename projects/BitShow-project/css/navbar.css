@@ -1,11 +1,3 @@
-/********** Import ***********/
-.row {
-  padding: 30px; }
-
-img {
-  width: 100%;
-  height: 500px; }
-
 .topnav {
   overflow: hidden;
   background-color: #343A40; }
@@ -59,17 +51,5 @@ img {
 
   .topnav input[type=text] {
     border: 1px solid #ccc; } }
-/********** General Settings *************/
-* {
-  box-sizing: border-box; }
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #ddd; }
-
-.container {
-  border: 1px solid #343A40;
-  padding: 0; }
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=navbar.css.map */
