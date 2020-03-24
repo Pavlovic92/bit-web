@@ -1,5 +1,5 @@
 .row {
-    padding: 30px;
+    padding: 15px 30px 15px 30px;
 }
 
 img {
@@ -7,4 +7,17 @@ img {
     height: 500px;
 }
 
-.col-lg-4 a {}
+.col-lg-4 {
+    width: 100%;
+    padding: 0px;
+    border: 2px solid #ffffff;
+    margin-bottom: 15px;
+    margin-right: -2px;
+}
+
+.col-lg-4 a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 0px 15px 15px;
+}
