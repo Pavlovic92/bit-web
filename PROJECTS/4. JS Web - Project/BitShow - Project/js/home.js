@@ -12,7 +12,9 @@ function searchShows() {
         if (removeRows) {
             removeRows.remove();
         }
+        //
 
+        
         let moviesRow = document.createElement('div');
         moviesRow.className = 'row';
 
@@ -37,11 +39,8 @@ function searchShows() {
             movieWrapper.append(movieTitle);
             console.log(data);
         });
-
     }
     newXHR.send();
-
-
 };
 
 const btn = document.querySelector('button');

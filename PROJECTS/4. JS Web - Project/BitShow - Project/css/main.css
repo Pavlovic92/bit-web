@@ -1,4 +1,9 @@
 /********** Import ***********/
+h1 {
+  color: #fff;
+  text-align: center;
+  margin: 15px 0px; }
+
 .row {
   padding: 15px 30px 15px 30px; }
 
