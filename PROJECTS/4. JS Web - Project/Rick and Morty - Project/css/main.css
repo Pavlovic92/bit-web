@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    background-image: url("../img/bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 1200px;
+}
+
+header {
+    background-color: gray;
+    width: 100%;
+}
+
+#home-btn {
+    display: inline-block;
+    height: 38px;
+    padding-top: 6px;
+    padding-left: 39px;
+    color: white;
+    font-weight: 500;
+}
+
+.char-div {
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.char-title {
+    color: white;
+}
+
+.char-btn {
+    padding: 0px 50px;
+    border: 2px solid #0020ff;
+    border-radius: 5px;
+    color: #0020ff;
+    font-size: 18px;
+}
